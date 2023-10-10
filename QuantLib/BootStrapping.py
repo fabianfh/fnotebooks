@@ -20,7 +20,8 @@ def BootstrapOIS(md,mc):
 
    
     oisYieldCurve = ql.PiecewiseFlatForward(ql.Settings.instance().evaluationDate,
-                                            depoHelpers+oisRateHelpers,ql.Actual365Fixed());
+                                            depoHelpers + oisRateHelpers,
+                                            ql.Actual365Fixed());
     return oisYieldCurve
 
 
